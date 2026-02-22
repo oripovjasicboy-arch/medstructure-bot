@@ -44,7 +44,7 @@ async def handle(message: types.Message):
 
     elif message.text == "I BO‘LIM — Sistema digestorium":
         digest_menu = ReplyKeyboardMarkup(resize_keyboard=True)
-        digest_menu.add("Og‘iz bo‘shlig‘i")
+        digest_menu.add("Og'iz bo‘shlig‘i")
         digest_menu.add("Tishlar")
         digest_menu.add("Til")
         digest_menu.add("Tanglay")
@@ -120,3 +120,4 @@ async def handle(message: types.Message):
 if __name__ == "__main__":
 
     executor.start_polling(dp, skip_updates=True)
+
