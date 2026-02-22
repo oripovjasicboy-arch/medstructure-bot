@@ -56,7 +56,7 @@ async def handle(message: types.Message):
     
         await message.answer("SISTEMA DIGESTORIUM", reply_markup=digest_menu)
 
-    elif message.text == "Og‘iz bo‘shlig‘i":
+    elif message.text == "Og'iz bo‘shlig‘i":
         media = [
         InputMediaPhoto(open("ogiz1.jpg", "rb")),
         InputMediaPhoto(open("ogiz2.jpg", "rb")),
@@ -118,4 +118,5 @@ async def handle(message: types.Message):
         await message.answer("Menyudan tanlang.")
 
 if __name__ == "__main__":
+
     executor.start_polling(dp, skip_updates=True)
